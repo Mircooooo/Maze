@@ -1,3 +1,7 @@
- Etude des différents algorithmes de résolution des labyrinthes
- J'ai commencé la programmation permettant de générer un labyrinthe aléatoire
- Découverte de l'écran tactile qui sera utilisé lors dela réalisation du projet
+ Etude des différents algorithmes de résolution des labyrinthes (algorithmes de Prim, d'Aldous-Broder, de Wilson et Hunt and kill)
+ afin de réaliser un layrinthe dit parfait (chaque cellule est reliée à toutes les autres et, ce, de manière unique)
+ Le fait de réaliser un labyrinthe dit "parfait" est le principal enjeu car au départ j'avais pensé à faire un chemin et autour, ajouter 
+ des lignes afin d'induire le joueur en erreur, mais cela est en réalité plus compliqué car il y a de grandes chances que le labyrinthe soit "imparfait"
+ (ils peuvent contenir des boucles, des îlots ou des cellules inaccessibles)
+ J'ai ensuite commencé la programmation permettant de générer un labyrinthe aléatoire mais elle n'estr pas encore finie
+ Découverte de l'écran tactile qui sera utilisé lors dela réalisation du projet et du systeme de leds qui sera employé.
