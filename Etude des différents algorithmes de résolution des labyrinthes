@@ -1,0 +1,38 @@
+Algorithmes de Prim : On commence par choisir une cellule « Vierge » au hasard, on marque comme « Finie »,
+puis on marque tous ses voisins en tant que « Frontière ». Le labyrinthe est terminé lorsqu’il n’y a plus de cellules « Frontière » 
+(ce qui signifie par conséquent qu’il n’y a plus de cellules « Vierges », elles sont toutes « Finies »).
+
+Cet algorithme génère des labyrinthes avec un facteur « rivière »(labyrinthe sans "zigszags") très bas, plein de petits culs-de-sac, et la solution est rapide à trouver en général.
+
+
+Algorithme d’Aldous-Broder: On choisit une cellule au hasard comme « cellule courante » et on la marque comme « visitée ».
+Tant qu’il existe des cellules non visitées :
+On choisit un voisin au hasard,
+Si le voisin choisi n’a pas encore été visité :
+  On ouvre un passage entre la « cellule courante » et le voisin choisi,
+  On marque le voisin choisi comme étant visité,
+  On fait du voisin choisi la « cellule courante »
+
+La chose la plus intéressante de cet algorithme est qu’il génère tous les labyrinthes possibles d’une taille donnée selon une probabilité égale.
+Le probleme est qu'il est lent mais comme je compte l'utiliser sur une petite matrice, ce problème n'en ai plus vraiment un.
+
+Algorithme de Wilson : On commence en choisissant une cellule au hasard dans le labyrinthe.
+Ensuite, on creuse au hasard dans le labyrinthe tant qu'on ne rencontre pas de cellule déjà creusée
+Si c'est le cas, on reviens à la cellule précédemment creusée et on recommence mais cette fois, à la différence de l'algorithme d’Aldous-Broder,
+on interdit d'essayer de creuser vers la cellule d'ou l'on vient.
+
+L'avantage de cet algorithme est qu'il est plus rapide
+
+Algorithme Hunt and Kill : Choisissez un lieu de départ.
+On effectue une marche aléatoire, en creusant des passages vers des voisins non visités, jusqu'à ce que la cellule actuelle n'ait plus de voisins non visités.
+Entrez en mode "chasse", où on parcoure la grille à la recherche d'une cellule non visitée adjacente à une cellule visitée. 
+Si trouvé, on creuse un passage entre les deux et laissez la cellule autrefois non visitée être le nouvel emplacement de départ.
+Répétez les étapes 2 et 3 jusqu'à ce que le mode de recherche analyse toute la grille et ne trouve aucune cellule non visitée.
+
+Cet algorithme est en fait très bien pour créer de grands labyrinthe car il n'utile pas de mémoire mais il n'est pas purement alématoire et a tendance à
+creer des labyrinthes de type rivière.
+
+
+Conclusion : 
+
+Le type d'algorithme qui est le plus adapté à mon projet, en prenant en compte la taille de la matrice et la capacité de calcul, est celui de Wilson.
