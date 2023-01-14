@@ -1,1 +1,7 @@
 J'ai été absent lors de cette séance, les points qui vont suivre ont donc été réalisé pendant les vacances de noel.
+
+Lors de la séance 1, j'avais commencé le code pour générer un labyrinthe aléatoirement. Cependant je suis rapidement arrivé à une impasse,
+en effet le code en langage arduino pour créer un labyrinthe est très long et peu compréhensible. Par manque d'experience certainement avec ce langage,
+je n'ai pas réussi à arriver au résultat escompté. J'ai donc essayé de passer par le langage python pour générer un labyrinthe et utiliser le résultat de ce code
+dans le programme arduino. Au final mon code python génere bien un labyrinthe. Le labyrinthe est généré sous forme de 0 et de 1 dans un fichier .txt. Je peux ainsi
+récupérer ce fichier texte dans mon programme arduino. (les 0 désignent un passage et les 1 désigent un mur).
