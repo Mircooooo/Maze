@@ -1,0 +1,15 @@
+Je commence la programmation arduino de mon projet.
+Je stock le labyrinthe généré par mon programme python (je récupere pour l'instant le texte à la main) dans un tableau 11x11.
+J'ai ensuite initié la matrice de leds 11x11 dans un tableau. Par la suite, pour afficher le labyrinthe, je regarde si la valeur stocké dans
+une position [i][j] du tableau du labyrinthe est un 1 ou un 0. Si c'est un 1 j'allume la led positionnée à la position [i][j] dans le tableau de la matrice led
+d'une certaine couleur et les 0 d'une autre couleur.
+J'affiche le labyrinthe quelques secondes pouis je l'eteinds pour afficher une matrice de "base" définie au préalable où on ne voit plus le labyrinthe mais 
+simplement des cases avec la case sur laquelle on se trouve actuellement qui clignote.
+Maintenant que l'affichage "de base" est définie, il faut coder ce qui apparait lorsque l'on commence à jouer (sur une dalle tactile donc).
+Pour ce faire, je décide que le labyrinthe commence et fini toujours au meme endroit. Je stocke la position (x,y) de la case de départ
+(que je recupererait avec la dalle tactile) dans des variables (une pour x et une autre pour y). Je mets aussi dans des variables la position [i][j] 
+de la case courante dans le tableau du layrinthe. Je vérifie ensuite si l'endroit ou clique le jouer est une case "légale" 
+(c'est à dire adjacente à la case actuelle). Si c'est le cas, je vérifie si il n'y a pas de "1" (de mur) entre la case où le jouer à cliqué et la case courante,
+si il n'y en a pas, je change les coordonnes (x,y) et la position [i][j] de la case courante. Si il y a un "1", le jeu est perdu. 
+Si la case n'est pas "légale" (donc pas adjacente à la case actuelle), toutes les cases cligotent et le joueur doit recliquer sur une autre case 
+("légale" de préférence).
