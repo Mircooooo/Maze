@@ -2,6 +2,11 @@ J'ai été absent lors de cette séance, les points qui vont suivre ont donc ét
 
 Lors de la séance 1, j'avais commencé le code pour générer un labyrinthe aléatoirement. Cependant je suis rapidement arrivé à une impasse,
 en effet le code en langage arduino pour créer un labyrinthe est très long et peu compréhensible. Par manque d'experience certainement avec ce langage,
-je n'ai pas réussi à arriver au résultat escompté. J'ai donc essayé de passer par le langage python pour générer un labyrinthe et utiliser le résultat de ce code
-dans le programme arduino. Au final mon code python génere bien un labyrinthe. Le labyrinthe est généré sous forme de 0 et de 1 dans un fichier .txt. Je peux ainsi
-récupérer ce fichier texte dans mon programme arduino. (les 0 désignent un passage et les 1 désigent un mur).
+je n'ai pas réussi à arriver au résultat escompté. J'ai donc essayé de passer par le langage python pour générer un labyrinthe et utiliser le résultat de
+ce code dans le programme arduino. Au final mon code python génere bien un labyrinthe. 
+Le labyrinthe est généré sous forme de 0 et de 1 (les 0 désignent un passage et les 1 désigent un mur) dans un fichier .txt.
+A present il faut que je trouve un moyen de récupérer ce fichier texte dans mon programme arduino afin de le traiter.
+Etant donné que je n'ai pas encore trouvé de solution a ce probleme, je decide de continuer mon projet et de revenir à ce probleme plus tard.
+J'ai réfléchis à l'algorithme à mettre en place pour que le labyrinthe s'affiche sur mes bandes leds et disparaisse ensuite tout en restant en mémoire pour
+que le joueur esaie de résoudre le labyrinthe "à l'aveugle".
+
