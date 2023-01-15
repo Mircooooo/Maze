@@ -13,3 +13,6 @@ de la case courante dans le tableau du layrinthe. Je vérifie ensuite si l'endro
 si il n'y en a pas, je change les coordonnes (x,y) et la position [i][j] de la case courante. Si il y a un "1", le jeu est perdu. 
 Si la case n'est pas "légale" (donc pas adjacente à la case actuelle), toutes les cases cligotent et le joueur doit recliquer sur une autre case 
 ("légale" de préférence).
+
+Lors de la prochaine séance, au lieu de finir la partie programmation, je vais souder les leds entre elles et comprendre comment l'écran taclie marche
+car pour le moment, je ne peux pas tester si mon programme marche. 
