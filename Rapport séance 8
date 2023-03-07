@@ -1,0 +1,2 @@
+Durant cette séance j'ai corriger le code arduino pour faire fonctionner le prjoet parfaitement. J'ai passé la séance à chercher pourquoi mon code ne
+fonctionnait pas correctement. J'ai fini par trouver que j'avais mis un "=" au lieu d'un "==" dans une condition "if". Le projet est fini.
