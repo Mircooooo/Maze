@@ -1,3 +1,3 @@
 Le but est de réaliser un labyrinthe qui se génere aléatoiement et qui sera représenté avec des leds placées sous un ecran tacticle (13x17cm)
 Après un temps déterminé, le labyrinthe disparait pour laisser place à des cases
-Le joueur doit ensuite se rappeler du bon chemin et essayer d'appuyer sur les cases qui menes a la victoire (sortie du labyrinthe)
+Le joueur doit ensuite se rappeler du bon chemin et essayer d'appuyer sur les cases qui menent a la victoire (sortie du labyrinthe)
